@@ -359,6 +359,9 @@ letter-spacing: 0.03rem;
 }
 
 .socials-icon{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   margin: auto;
   width: 20px;
   height: 20px;
@@ -392,14 +395,14 @@ height:90px;
   display: inline-flex;
   width: 100%;
   height: 100%;
-  /* text-align: center; */
   border:1px solid #AFB1B8;
   border-radius: 4px; 
-  /* align-items: center; */
-
+  transition: solid 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 .regular-img {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   margin: auto;
   fill: currentColor;
 }
@@ -462,6 +465,10 @@ height:90px;
   display: flex;
 }
 
+.footer-links{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-links:not(:last-child){
   margin-right: 10px; 
 }
@@ -481,6 +488,7 @@ height:90px;
 }
 
 .button-footer{
+  
   display: inline-flex;
   align-items: center;
   margin-left: auto;
