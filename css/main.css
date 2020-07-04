@@ -113,11 +113,30 @@ header
 }
 
 .link {
+  position: relative;
+
   color: var(--link-text-color);
   }
 
-.nav-text{
-color: var(--accent-color);
+.link.curent::after{
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+ 
+}
+
+
+
+.curent{
+  color: var(--accent-color);
 }
 
 .link:hover,
@@ -281,8 +300,17 @@ color: var(--accent-color);
   
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+  
+
 .specialization-list .item{
-  background-color: #5A5B62;
+  position: relative;
+  margin-bottom: 30px;
+    
 }
  
 
@@ -292,6 +320,19 @@ color: var(--accent-color);
 
 
 .specialization-list .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top:0;
+  margin-bottom:0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
+  font-size: 14px;
+  background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-fon-color);
   text-align: center;
   }
